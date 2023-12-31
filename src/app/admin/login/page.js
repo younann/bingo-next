@@ -21,7 +21,7 @@ export default function AdminLogin ()
 
     return (
         <div className="flex justify-center items-center h-screen flex-col gap-y-5">
-            <h1 className="text-7xl text-blue-700">Bingo Game</h1>
+            <h1 className="tex-xl sm:text-7xl text-blue-700">Bingo Game</h1>
             <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
                 <div className="flex flex-col">
                     <input type="text" placeholder="Username" value={username} onChange={( e ) => setUsername( e.target.value )} className="mb-2 p-2 border rounded" />

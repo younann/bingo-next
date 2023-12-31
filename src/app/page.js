@@ -4,7 +4,7 @@ export default function HomePage ()
 {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold mb-6">Welcome to the Bingo Game</h1>
+      <h1 className=" text-xl sm:text-4xl font-bold mb-6">Welcome to the Bingo Game</h1>
       <div className="space-y-4 flex justify-around items-baseline gap-5 ">
         <Link href="/admin/login">
           <p className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

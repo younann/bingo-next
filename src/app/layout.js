@@ -15,7 +15,7 @@ export default function RootLayout ( { children } )
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <div className="w-full absolute bottom-3">        <p className="text-center">developed by : <Link href="https://www.linkedin.com/in/younan-nwesre/" className="text-red-500">Younan Nwesre</Link></p>
+        <div className="w-full fixed bottom-3">        <p className="text-center">developed by : <Link href="https://www.linkedin.com/in/younan-nwesre/" className="text-red-500">Younan Nwesre</Link></p>
         </div>
       </body>
     </html>
