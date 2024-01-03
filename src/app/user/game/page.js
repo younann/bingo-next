@@ -53,7 +53,7 @@ export default function UserGame ()
                         placeholder="Enter your name"
                         value={userName}
                         onChange={( e ) => setUserName( e.target.value )}
-                        className="mb-2 p-2 border rounded"
+                        className="mb-2 p-2 border rounded dark:text-blue-500 "
                     />
                     <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Enter Game
@@ -68,7 +68,10 @@ export default function UserGame ()
             <h1 className="text-4xl font-bold text-center mb-6">Welcome, {userName}</h1>
             <div className="grid grid-cols-5 gap-4">
                 {bingoCard.map( ( number, index ) => (
-                    <div key={index} className={`p-4 border rounded ${ markedNumbers.includes( number ) ? 'bg-green-200' : 'bg-white' }`} onClick={() => toggleMarkNumber( number )}>
+                    <div key={index}
+                        className={`p-4 border rounded ${ markedNumbers.includes( number ) ? 'bg-green-200 dark:bg-green-700' : 'bg-white dark:bg-gray-800' } 
+                    text-gray-900 dark:text-white`}
+                        onClick={() => toggleMarkNumber( number )}>
                         {number}
                     </div>
                 ) )}
